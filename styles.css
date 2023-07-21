@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(to top left, grey, white);
+  flex: 1;
+}
+.winner {
+  width: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.titleW {
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 50px;
+  margin-top: 10vh;
+}
+.playerimg {
+  width: 20vw;
+  height: 40vh;
+  margin-right: 5vw;
+  margin-left: 2vw;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 3;
+}
+.title {
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 50px;
+  margin-top: 10vh;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 2vh;
+}
+
+.show-modal {
+  font-size: 2rem;
+  width: 10vw;
+  height: 10vh;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444);
+  color: white;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center; /* Center the text horizontally */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+ul.roster {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.roster li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 5px;
+}
